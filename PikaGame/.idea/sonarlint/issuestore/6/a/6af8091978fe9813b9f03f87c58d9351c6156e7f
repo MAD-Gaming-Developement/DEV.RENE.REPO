@@ -1,0 +1,71 @@
+
+f
+java:S1192["IDefine a constant instead of duplicating this literal "firstRun" 3 times.(í‘ºè8“íŠÅÄ1
+c
+java:S1192d"FDefine a constant instead of duplicating this literal "music" 3 times.(ºÆ§‡8“íŠÅÄ1
+c
+java:S1192e"FDefine a constant instead of duplicating this literal "sound" 3 times.(àºàĞ8“íŠÅÄ1
+n
+java:S1301˜"KReplace this "switch" statement by "if" statements to increase readability.(³ÒÂŒÿÿÿÿÿ8”íŠÅÄ1
+n
+java:S1301¤"KReplace this "switch" statement by "if" statements to increase readability.(³ÒÂŒÿÿÿÿÿ8”íŠÅÄ1
+n
+java:S1301¯"KReplace this "switch" statement by "if" statements to increase readability.(³ÒÂŒÿÿÿÿÿ8ÜÕÅÄ1
+p
+java:S1104F"NMake mp a static final constant or non-public and provide accessors if needed.(ÛõÊÎûÿÿÿÿ8•íŠÅÄ1
+q
+java:S1104F"OMake win a static final constant or non-public and provide accessors if needed.(ÛõÊÎûÿÿÿÿ8•íŠÅÄ1
+u
+java:S1104F"SMake bgsound a static final constant or non-public and provide accessors if needed.(ÛõÊÎûÿÿÿÿ8•íŠÅÄ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«£ˆ¿8™íŠÅÄ1
+r	java:S116<"VRename this field "myCoins_val" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È‚ïê8âíŠÅÄ1
+s	java:S116="RRename this field "bet_val" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô¢šøÿÿÿÿ8âíŠÅÄ1
+r	java:S116>"VRename this field "jackpot_val" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı¿ìŠ8ãíŠÅÄ1
+u	java:S116K"TRename this field "music_off" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒØºüÿÿÿÿ8ãíŠÅÄ1
+t	java:S116K"SRename this field "music_on" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒØºüÿÿÿÿ8ãíŠÅÄ1
+t
+java:S1845K"RRename field "soundon" to prevent any misunderstanding/clash with field "soundOn".(ÒØºüÿÿÿÿ8êíŠÅÄ1
+C
+java:S1659D"&Declare "soundOn1" on a separate line.(àÆç8ìíŠÅÄ1
+b
+java:S1659F"@Declare "win" and all following declarations on a separate line.(ÛõÊÎûÿÿÿÿ8ìíŠÅÄ1
+C
+java:S1659J"'Declare "playsound" on a separate line.(ã®ÈM8ííŠÅÄ1
+g
+java:S1659K"EDeclare "music_on" and all following declarations on a separate line.(ÒØºüÿÿÿÿ8ííŠÅÄ1
+s
+java:S1450."VRemove the "adapter" field and declare it as a local variable in the relevant methods.(ù¼æ°8îíŠÅÄ1
+v
+java:S14505"ZRemove the "minusButton" field and declare it as a local variable in the relevant methods.(•68îíŠÅÄ1
+v
+java:S14504"YRemove the "plusButton" field and declare it as a local variable in the relevant methods.(Î¸Áá8ïíŠÅÄ1
+z
+java:S14506"]Remove the "settingsButton" field and declare it as a local variable in the relevant methods.(Õ™è‘8ğíŠÅÄ1
+{
+java:S14503"YRemove the "spinButton" field and declare it as a local variable in the relevant methods.(Ğ­µÜûÿÿÿÿ8ğíŠÅÄ1
+t
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¨Œşÿÿÿÿ8şíŠÅÄ1
+Y
+java:S1874Q"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(ÛŒ şÿÿÿÿ8€îŠÅÄ1
+T
+java:S1874R"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(­‰ı›8€îŠÅÄ1
+D	java:S131˜""Add a default case to this switch.(³ÒÂŒÿÿÿÿÿ8ˆîŠÅÄ1
+D	java:S131¤""Add a default case to this switch.(³ÒÂŒÿÿÿÿÿ8ŒîŠÅÄ1
+D	java:S131¯""Add a default case to this switch.(³ÒÂŒÿÿÿÿÿ8öç™ÅÄ1
+R
+java:S1874À"/Remove this use of "setView"; it is deprecated.(’æ·ëúÿÿÿÿ8ÎÖÅÄ1
+U
+java:S1117ş"7Rename "bet" which hides the field declared at line 58.(«Á¡³8îŠÅÄ1
+?	java:S131­""Add a default case to this switch.(¶Ëôì8ñÖÅÄ1
+p	java:S100Í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àíÀÉøÿÿÿÿ8©îŠÅÄ1
+k	java:S100¸"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉîÇÛ8ÏîŠÅÄ1
+O
+java:S1602Â",Remove useless curly braces around statement(ºäº¡úÿÿÿÿ8ÑîŠÅÄ1
+E
+java:S10689")Remove this unused "lines" private field.(‹óĞJ8ÒîŠÅÄ1
+H
+java:S1068D"+Remove this unused "soundOn" private field.(àÆç8ÒîŠÅÄ1
+I
+java:S1068D",Remove this unused "soundOn1" private field.(àÆç8ÒîŠÅÄ1
+K
+java:S1144¸"-Remove this unused private "ShowInfo" method.(ÉîÇÛ8ÒîŠÅÄ1
