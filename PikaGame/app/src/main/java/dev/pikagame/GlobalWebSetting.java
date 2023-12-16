@@ -9,6 +9,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import dev.pikagame.libs.JSInterface;
+
 public class GlobalWebSetting extends WebView {
     public GlobalWebSetting(Context context) {
         super(context);
