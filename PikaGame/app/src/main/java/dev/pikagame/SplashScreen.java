@@ -37,7 +37,6 @@ public class SplashScreen extends AppCompatActivity {
 
         MyPrefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 
-
         RequestQueue connectAPI = Volley.newRequestQueue(this);
         JSONObject requestBody = new JSONObject();
         try {
@@ -61,6 +60,8 @@ public class SplashScreen extends AppCompatActivity {
                         appStatus = jsonData.getString("gameKey");
                         gameURL = gameData.getString("gameURL");
 
+                        MyPrefs.edit().putString("gameURL", gameURL).apply();
+
                         // Using a Handler to delay the transition to the next activity
                         new Handler().postDelayed(() -> {
 
@@ -72,7 +73,7 @@ public class SplashScreen extends AppCompatActivity {
                             }
                             else
                             {
-                                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                                Intent intent = new Intent(SplashScreen.this, Policy.class);
                                 startActivity(intent);
                                 finish();
                             }

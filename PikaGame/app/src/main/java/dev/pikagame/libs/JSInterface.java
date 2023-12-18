@@ -61,50 +61,50 @@ public class JSInterface {
         }
 
 
-            RequestQueue afQueue =  Volley.newRequestQueue(context);
+        RequestQueue afQueue =  Volley.newRequestQueue(context);
 
-            JSONObject requestBody = new JSONObject();
-            try {
-                requestBody.put("appsflyer_id", UUID.randomUUID().toString());
-                requestBody.put("eventName", name);
-                requestBody.put("eventValue", data);
-                requestBody.put("authentication", "7odVQ4PMGwVguGQABWe9hS");
-                requestBody.put("endpoint", context.getPackageName());
-            } catch (JSONException e) {
-                e.printStackTrace();
+        JSONObject requestBody = new JSONObject();
+        try {
+            requestBody.put("appsflyer_id", UUID.randomUUID().toString());
+            requestBody.put("eventName", name);
+            requestBody.put("eventValue", data);
+            requestBody.put("authentication", "7odVQ4PMGwVguGQABWe9hS");
+            requestBody.put("endpoint", context.getPackageName());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        String endPoint = "https://appsflyer.madgamingdev.com/user/event" +
+                "?appsflyer_id=" + UUID.randomUUID().toString() +
+                "&eventName=" + name +
+                "&eventValue=" + data +
+                "&authentication=" + "7odVQ4PMGwVguGQABWe9hS" +
+                "&endpoint=" + context.getPackageName();
+
+        JsonObjectRequest myReq = new JsonObjectRequest(Request.Method.GET,
+                endPoint, requestBody,
+                response -> {
+                    ObjectMapper objectMapper = new ObjectMapper();
+
+                    try {
+                        Map<String, Object> dataMap = objectMapper.readValue(response.toString(), Map.class);
+                    }
+                    catch (IOException e) {
+                        //Log.e(GlobalCFG.appCode+":API", e.getMessage());
+                    }
+
+                },
+                Throwable::printStackTrace)
+        {
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("accept", "application/json");
+                headers.put("content-type", "application/json");
+                return headers;
             }
-
-            String endPoint = "https://appsflyer.madgamingdev.com/user/event" +
-                    "?appsflyer_id=" + UUID.randomUUID().toString() +
-                    "&eventName=" + name +
-                    "&eventValue=" + data +
-                    "&authentication=" + "7odVQ4PMGwVguGQABWe9hS" +
-                    "&endpoint=" + context.getPackageName();
-
-            JsonObjectRequest myReq = new JsonObjectRequest(Request.Method.GET,
-                    endPoint, requestBody,
-                    response -> {
-                        ObjectMapper objectMapper = new ObjectMapper();
-
-                        try {
-                            Map<String, Object> dataMap = objectMapper.readValue(response.toString(), Map.class);
-                        }
-                        catch (IOException e) {
-                            //Log.e(GlobalCFG.appCode+":API", e.getMessage());
-                        }
-
-                    },
-                    Throwable::printStackTrace)
-            {
-                @Override
-                public Map<String, String> getHeaders() {
-                    Map<String, String> headers = new HashMap<>();
-                    headers.put("accept", "application/json");
-                    headers.put("content-type", "application/json");
-                    return headers;
-                }
-            };
-            afQueue.add(myReq);
+        };
+        afQueue.add(myReq);
 
     }
 
