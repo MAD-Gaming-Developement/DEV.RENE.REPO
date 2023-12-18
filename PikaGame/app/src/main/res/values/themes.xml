@@ -3,7 +3,10 @@
     <style name="Base.Theme.PikaGame" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowDisablePreview">true</item>
     </style>
 
-    <style name="Theme.PikaGame" parent="Base.Theme.PikaGame" />
+    <style name="Theme.PikaGame" parent="Base.Theme.PikaGame">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
 </resources>
