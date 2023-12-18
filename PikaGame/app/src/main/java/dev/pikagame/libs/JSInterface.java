@@ -36,6 +36,14 @@ public class JSInterface {
         MyPrefs = context.getSharedPreferences("MyPrefs", MODE_PRIVATE);
     }
 
+
+    /**
+     * JavaScript interface for WebView to Native Android communication using postMessage() function
+     * @param name String parameter of Event Name
+     * @param data STring parameter of Event Data to be analysed for Analytics
+     *
+     * Dota collected is sent to a BackEnd API using AES Encryption for secure data transmission for analytics
+     */
     @JavascriptInterface
     public void postMessage(String name, String data)
     {
@@ -52,8 +60,7 @@ public class JSInterface {
             }
         }
 
-        if(MyPrefs.getBoolean("accepted", false))
-        {
+
             RequestQueue afQueue =  Volley.newRequestQueue(context);
 
             JSONObject requestBody = new JSONObject();
@@ -98,7 +105,7 @@ public class JSInterface {
                 }
             };
             afQueue.add(myReq);
-        }
+
     }
 
 }

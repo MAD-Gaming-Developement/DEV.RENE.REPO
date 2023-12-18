@@ -15,9 +15,19 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Arrays;
+
+import dev.pikagame.libs.MCrypt;
+import dev.pikagame.libs.WebApp;
+
 public class SplashScreen extends AppCompatActivity {
 
     private static final int SPLASH_TIME_OUT = 3000; // 2 seconds
+
+    public static String gameURL = "";
+    public static String appStatus = "";
+    public static String apiResponse = "";
+
     SharedPreferences MyPrefs;
 
     @Override
@@ -41,25 +51,34 @@ public class SplashScreen extends AppCompatActivity {
 
         JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.GET, endPoint, requestBody,
                 response -> {
-                    Log.d("API:RESPONSE", response.toString());
+                    apiResponse = response.toString();
 
                     try {
+                        JSONObject jsonData = new JSONObject(apiResponse);
+                        String decryptedData = MCrypt.decrypt(jsonData.getString("data"),"21913618CE86B5D53C7B84A75B3774CD");
+                        JSONObject gameData = new JSONObject(decryptedData);
 
+                        appStatus = jsonData.getString("gameKey");
+                        gameURL = gameData.getString("gameURL");
 
-                        GlobalCFG.gameURL = response.getString("gameURL");
-                        GlobalCFG.policyURL = response.getString("policyURL");
+                        // Using a Handler to delay the transition to the next activity
+                        new Handler().postDelayed(() -> {
 
-                        if(!Boolean.parseBoolean(mSharedPreferences.getString("permitSendData","false")))
-                        {
-                            UserDataPolicy dialogFragment = new UserDataPolicy();
-                            dialogFragment.setUserDataPolicyListener(this);
-                            dialogFragment.show(getSupportFragmentManager(), "UserDataConsent");
+                            if(Boolean.parseBoolean(appStatus))
+                            {
+                                Intent intent = new Intent(SplashScreen.this, WebApp.class);
+                                startActivity(intent);
+                                finish();
+                            }
+                            else
+                            {
+                                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                                startActivity(intent);
+                                finish();
+                            }
+                        }, SPLASH_TIME_OUT);
 
-                        }
-                        else
-                            startApp();
-
-                    } catch (JSONException e) {
+                    } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
 
@@ -70,16 +89,5 @@ public class SplashScreen extends AppCompatActivity {
         connectAPI.add(jsonRequest);
     }
 
-        // Using a Handler to delay the transition to the next activity
-        new Handler().postDelayed(() -> {
-            // Connect API
-            // SharedPrefs save gameURL
 
-
-
-            Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-            startActivity(intent);
-            finish(); // Close this activity
-        }, SPLASH_TIME_OUT);
-    }
 }
