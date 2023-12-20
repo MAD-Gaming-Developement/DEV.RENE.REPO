@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD9DE"
+    tools:context=".splash">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="Splash Gif"
+        android:src="@drawable/kawaii" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SpinScore</string>
+
+    <string name="win_splash">YOU WON!</string>
+    <string name="coins">coins</string>
+    <string name="btnExit">ButtonExit\n</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnClose">Exit Settings</string>
+    <string name="btnMinus">Decrease Value\n</string>
+    <string name="moreApps">More</string>
+    <string name="btnmusicOff">Music Off\n</string>
+    <string name="btnmusicOn">Music On\n</string>
+    <string name="btnPlus">Increase</string>
+    <string name="btnSettings">Settings</string>
+    <string name="btnSoundOn">Sound On</string>
+    <string name="splashui">Splash Screen\n</string>
+    <string name="btnSoundOff">Sound Off</string>
+
+</resources>

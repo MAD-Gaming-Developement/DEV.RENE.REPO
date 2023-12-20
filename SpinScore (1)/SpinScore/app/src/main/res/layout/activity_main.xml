@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/jackpotl"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/jackpot_bg"
+        android:layout_marginBottom="@dimen/margin_bottom_pics">
+
+        <TextView
+            android:id="@+id/jackpot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="250,565"
+            android:textStyle="bold"
+            android:textColor="#ffd900"
+            android:textSize="@dimen/text_jackpot" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            layout="@layout/slot_machine"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/combin" />
+
+        <include
+            layout="@layout/slot_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/coin_bg"
+            android:layout_marginBottom="-10dp">
+
+            <TextView
+                android:id="@+id/myCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0575"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="7dp"/>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+</RelativeLayout>

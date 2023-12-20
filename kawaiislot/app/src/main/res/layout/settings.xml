@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/setting_bg">
+
+        <ImageView
+            android:importantForAccessibility="no"
+            android:id="@+id/close"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/close"/>
+
+        <ImageView
+            android:importantForAccessibility="no"
+            android:id="@+id/music_on"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/on"/>
+
+        <ImageView
+            android:importantForAccessibility="no"
+            android:id="@+id/music_off"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/off"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:importantForAccessibility="no"
+            android:id="@+id/sounds_on"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="195dp"
+            android:background="@drawable/on"/>
+
+        <ImageView
+            android:importantForAccessibility="no"
+            android:id="@+id/sounds_off"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="195dp"
+            android:background="@drawable/off"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</RelativeLayout>
