@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <module version="4">
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="e457f229-6361-45d3-b662-bbe203fa57ad" />
+=======
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="7da6886c-0301-4db2-8ac0-55f0b2560e40" />
+>>>>>>> Stashed changes
   </component>
 </module>

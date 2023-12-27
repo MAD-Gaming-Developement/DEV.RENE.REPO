@@ -28,6 +28,10 @@ a
 `
 0app/src/main/java/dev/pikagame/SplashScreen.java,c\8\c867bd15e31a82b1534b98362b94deca4bafaf50
 _
+<<<<<<< Updated upstream
 /app/src/main/java/dev/pikagame/libs/WebApp.java,e\9\e937decc45461c6df10ec58c4410c6602c037a25
 d
 4app/src/main/java/dev/pikagame/libs/JSInterface.java,c\5\c5d9a354f57c5b9a9b3432c3ffe4a2cfbce3cdb7
+=======
+/app/src/main/java/dev/pikagame/libs/WebApp.java,e\9\e937decc45461c6df10ec58c4410c6602c037a25
+>>>>>>> Stashed changes

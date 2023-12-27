@@ -5,6 +5,5 @@
 -keep class dev.pikagame.MainActivity { *; }
 -keep class dev.pikagame.Mechanics { *; }
 -keep class dev.pikagame.CustomManager { *; }
--keep class dev.pikagame.JSScript { *; }
 -keep class dev.pikagame.Policy { *; }
 -keep class dev.pikagame.GlobalWebSetting { *; }

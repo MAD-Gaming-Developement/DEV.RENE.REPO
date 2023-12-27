@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 g	java:S112S"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›æıÚÇ1
 J
 java:S1444"-Make this "public static gameURL" field final(çÇõò8æıÚÇ1
@@ -14,3 +15,20 @@ S
 java:S2696="6Make the enclosing method "static" or remove this set.(Æúà©8ßçıÚÇ1
 N
 java:S1602V",Remove useless curly braces around statement(ËÕ£Õúÿÿÿÿ8üçıÚÇ1
+=======
+g	java:S112R"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8œèØÚÇ1
+J
+java:S1444"-Make this "public static gameURL" field final(çÇõò8¨èØÚÇ1
+Q
+java:S1444"/Make this "public static appStatus" field final(ıµ×¬ıÿÿÿÿ8©èØÚÇ1
+S
+java:S1444"1Make this "public static apiResponse" field final(¬Ææøûÿÿÿÿ8©èØÚÇ1
+X
+java:S26966"6Make the enclosing method "static" or remove this set.(˜‘öóùÿÿÿÿ8õêØÚÇ1
+S
+java:S2696="6Make the enclosing method "static" or remove this set.(“´åÍ8üêØÚÇ1
+S
+java:S2696>"6Make the enclosing method "static" or remove this set.(Æúà©8ıêØÚÇ1
+N
+java:S1602U",Remove useless curly braces around statement(ËÕ£Õúÿÿÿÿ8¡ëØÚÇ1
+>>>>>>> Stashed changes
